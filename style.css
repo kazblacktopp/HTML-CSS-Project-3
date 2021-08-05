@@ -38,6 +38,7 @@ body {
 .container {
   width: 96rem;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 header,
@@ -113,6 +114,9 @@ img {
 
 /* FEATURES */
 .features-icon {
+  stroke: var(--color-primary);
+  width: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .features-title {
@@ -181,6 +185,8 @@ h3 {
 }
 
 .chair-icon {
+  stroke: var(--color-primary);
+  width: 2.4rem;
 }
 
 .chair-price {
