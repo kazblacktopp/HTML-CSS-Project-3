@@ -8,8 +8,11 @@ FONT SIZE SYSTEM (px)
 
 :root {
   --color-primary: #087f5b;
-  --color-primary-light: #099268;
+  --color-primary-hover: #099268;
+  --color-primary-medium: #c3fae8;
+  --color-primary-light: #e6fcf5;
   --color-grey: #343a40;
+  --color-grey-light: #495057;
 }
 
 * {
@@ -43,7 +46,7 @@ body {
 
 header,
 section {
-  margin-bottom: 4.8rem;
+  margin-bottom: 9.6rem;
 }
 
 h2 {
@@ -65,12 +68,12 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
-  border-radius: 0.5rem;
+  border-radius: 100rem;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-primary-hover);
 }
 
 .btn--big {
@@ -78,8 +81,8 @@ h2 {
 }
 
 .btn--small {
-  font-size: 1.4rem;
-  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.6rem;
 }
 
 /* ------------------------ */
@@ -91,7 +94,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 8rem;
-  margin-top: 4.8rem;
+  margin-top: 6.4rem;
 }
 
 .header-text-box {
@@ -99,7 +102,7 @@ header {
 }
 
 h1 {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
   font-size: 4.4rem;
   line-height: 1.1;
 }
@@ -110,13 +113,14 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 1rem;
 }
 
 /* FEATURES */
 .features-icon {
   stroke: var(--color-primary);
   width: 3.2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .features-title {
@@ -124,14 +128,12 @@ img {
   font-size: 2rem;
 }
 
-.features-text {
-}
-
 /* TESTIMONIAL */
 .testimonial-section {
   background-color: var(--color-primary);
   color: #fff;
   padding: 2.4rem;
+  border-radius: 1rem;
 }
 
 .testimonial-box {
@@ -147,18 +149,27 @@ img {
 .testimonial-text {
   font-style: italic;
   margin-bottom: 2.4rem;
+  color: var(--color-primary-light);
 }
 
 .testimonial-author {
   font-size: 1.6rem;
+  color: var(--color-primary-medium);
 }
 
 .chair {
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 /* CHAIRS */
 .chair-box {
-  padding: 2.4rem;
+  padding: 3.2rem;
 }
 
 h3 {
@@ -168,14 +179,14 @@ h3 {
 
 .chair-details {
   list-style: none;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 
 .chair-details li {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.6rem;
   font-size: 1.6rem;
   line-height: 1.2;
 }
@@ -186,17 +197,18 @@ h3 {
 
 .chair-icon {
   stroke: var(--color-primary);
-  width: 2.4rem;
+  width: 2rem;
 }
 
 .chair-price {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 2rem;
 }
 
 footer {
   margin-bottom: 4.8rem;
   font-size: 1.4rem;
-  color: #495057;
+  color: var(--color-grey-light);
 }
